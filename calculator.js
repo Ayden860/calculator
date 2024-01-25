@@ -1,5 +1,5 @@
 function addition(){
-    let boo = '0';
+    let boo = 0;
     console.log("Press 1 to Add\n");
     console.log("Press 2 to Subtract\n");
     console.log("Press 3 to Multiply\n");
@@ -19,7 +19,7 @@ function addition(){
     }
     if(response === '1'){
         for(let m = 0; m < many; m++){
-            boo += Number(list[m]);
+            boo += parseFloat(list[m]);
         }
         // var msg = boo;
         // document.getElementById("demo").innerHTML = "10";
@@ -29,21 +29,21 @@ function addition(){
     }
     if(response === '2'){
         for(let p = 0; p < many; p++){
-            boo = boo - list[p];
+            boo = boo - parseFloat(list[p]);
         }
         document.getElementById("demo").innerHTML = boo;
         // return boo;
     }
     if(response === '3'){
         for(let l = 0; l < many; l++){
-            boo = boo * list[l];
+            boo = boo * parseFloat(list[l]);
         }
         document.getElementById("demo").innerHTML = boo;
         // return boo;
     }
     if(response === '4'){
         for(let k = 0; k < many; k++){
-            boo = boo / list[k];
+            boo = boo / parseFloat(list[k]);
         }
         document.getElementById("demo").innerHTML = boo;
         // return boo;
